@@ -12,21 +12,25 @@
             font-weight: 300;
             margin: 0
         }
-
-        .First-Page {
-            height: 90vh;
+    
+        .Page {
+            height: 95vh;
             position: relative;
-            margin: 0 0;
+            margin: 0 auto;
             overflow: hidden;
         }
 
         .source-image {
-/*            width: 100%;*/
             height: 100%;
+/*            width: 100%;*/
             position: absolute;
-            background-size: cover;
-/*            top: 0;*/
-/*            left: 0;*/
+/*            background-size: cover;*/
+            display: block;
+/*            margin-left: auto;*/
+/*            margin-right: auto;*/
+/*            position:absolute;*/
+            left:50%;
+            margin-left:-650px;
         }
 
         .title-container {
@@ -178,7 +182,7 @@
         }
         
       .Portfolio-Page {
-            height: 90vh;
+            height: 95vh;
 /*            display: block;*/
             position: relative;
             background-color: white;
@@ -282,8 +286,8 @@
            margin-top: -20px; 
            font-size: 70px; 
         }
-        .recyclable-descript ul {
-            
+        .recyclable-descript ul li {
+            font-size: 25px;
         }
         
         .download-image {
@@ -292,18 +296,79 @@
         }
         .icon-image {
             width: 100px;
+            
+        }
+        #gimme-icon {
+            margin-left: -15px;
+            width: 130px;
+        }
+        #gimme-title {
+            margin-top: -20px;
+            font-size: 65px;
+        }
+        #gimme-slogan {
+            font-size: 32px;
+
+            margin-bottom: 15px;
         }
         
+        .about-container {
+            position: relative;
+            color: white;
+           text-align: center;
+            top: 30%;
+            
+        }
+        .about-description {
+             font-size: 30px;
+            font-family: serif;
+            font-weight:inherit;
+            font-style: italic;
+        }
+        .about-title {
+            margin: -30px 0;
+            font-size: 80px;
+            font-weight: 900;
+        }
         
-       
+        .orange {
+            background-color: rgb(250, 206, 134); 
+        }
+        .topic-box {
+            position: relative;
+/*            background-color: aquamarine;*/
+            width: calc(100% / 3);
+            height: 50%;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 55px;
+            float: left;
+            top: 30%;
+
+
+        }
+      .topic-box p {
+            margin-top: -10px;      
+            
+        }
+        
+        .topic-box img {
+/*            position: relative;*/
+            width: 80%;
+        }
+        .computer-height {
+            margin-top: 20px;
+        }
+      
         
         
     </style>
 </head>
 
 <body>
-    <div class="First-Page">
-        <img class="source-image" src="my_website_backgroundd.jpg" alt="" />
+    <div class="Page">
+        <img class="source-image" src="images/my_website_backgroundd.jpg" alt="" />
         <div class="title-container">
             <h1>MIRIAM HENDLER</h1>
             <h4>iOS Developer and more</h4>
@@ -323,11 +388,11 @@
                 </ul>
             </div>
             <div class="logo-container">
-                <img class="image-logo" src="MH Logo white.png" alt="" />
+                <img class="image-logo" src="images/MH Logo white.png" alt="" />
             </div>
         </div>
         <div class="footer">
-            <img class="down-arrow" src="Down Arrow.png" alt="" />
+            <img class="down-arrow" src="images/Down Arrow.png" alt="" />
         </div>
     </div>
       <div class="white-space">
@@ -350,27 +415,27 @@
     <div class="white-space">
     </div>
     <div class="Portfolio-Page">
-        <img class="recyclable-image" src="Recyclable-background.png" alt="" />
+        <img class="recyclable-image" src="images/Recyclable-background.png" alt="" />
         <div class="side-bar side-arrow">
-        <img class="side-arrow-image" src="Side%20Arrow.png.png" alt="" />
+        <img class="side-arrow-image" src="images/Side%20Arrow.png.png" alt="" />
         </div>
         <div class="side-bar case-study"></div>
 
         
         <div class="about-recyclable-container">
             <div class="phone-simulator">
-            <img class="phone-image" src="iphone recyclable screenshot.png" alt="" />
+            <img class="phone-image" src="images/iphone recyclable screenshot.png" alt="" />
         </div>
             <div class="about-rec-con-right">
             <div class="recyclable-descript">
                 <ul>
-                <li> <img class="icon-image" src="recycable%20icon.png" alt="" /></li>
+                <li> <img class="icon-image" src="images/recycable%20icon.png" alt="" /></li>
                     <li id="recyclable-title">recyclable.</li>
                     <li>Recyclable allows you to simply and 
 effectively take a photo of any item then
 instantly lets you know whether or not that 
 item is recyclable.</li>
-                    <li><img class="download-image" src="download app store.png" alt="" /></li>
+                    <li><img class="download-image" src="images/download app store.png" alt="" /></li>
                 </ul>
                 </div>
             </div>
@@ -378,32 +443,56 @@ item is recyclable.</li>
     </div>
     <div class="white-space"></div>
     <div class="Portfolio-Page">
-        <img class="recyclable-image" src="Gimme%20Dough%20Background.png" alt="" />
+        <img class="recyclable-image" src="images/Gimme%20Dough%20Background.png" alt="" />
         <div class="side-bar side-arrow">
-        <img class="side-arrow-image" src="Side%20Arrow.png.png" alt="" />
+        <img class="side-arrow-image" src="images/Side%20Arrow.png.png" alt="" />
         </div>
         <div class="side-bar case-study"></div>
 
         
         <div class="about-recyclable-container">
             <div class="phone-simulator">
-            <img class="phone-image" src="gimme%20dough%20ipgone%20screenshot.png" alt="" />
+            <img class="phone-image" src="images/gimme%20dough%20ipgone%20screenshot.png" alt="" />
         </div>
             <div class="about-rec-con-right">
             <div class="recyclable-descript">
                 <ul>
-                <li> <img class="icon-image" src="Gimme%20Dough%20Icon.png" alt="" /></li>
-                    <li id="recyclable-title">Gimme Dough</li>
+                <li> <img id="gimme-icon" src="images/Gimme%20Dough%20Icon.png" alt="" /></li>
+                    <li id="gimme-title">Gimme Dough</li>
+                    <li id="gimme-slogan">money now. money later.</li>
                     <li>Simple and effective budgeting app to help 
 you save money for the goals you have, easily 
 manage your money, find out how much to 
 set aside for spending, and to help you get 
 some dough!</li>
-                    <li><img class="download-image" src="download app store.png" alt="" /></li>
+                    <li><img class="download-image" src="images/download app store.png" alt="" /></li>
                 </ul>
                 </div>
             </div>
         </div>    
+    </div>
+    <div class="white-space"></div>
+    <div class="Page">
+    <img class="source-image" src="Images/About%20Background.png" alt="" />
+    <div class="about-container">
+        <p class="about-description">Find out who I am aside from being a developer</p>
+        <p class="about-title">MY PASSIONS AND PERSONALITY</p>
+        </div>
+    </div>
+    <div class="white-space"></div>
+    <div class="Page orange">
+    <div class="topic-box">
+        <img src="Images/apple.png"/>
+        <p>CORE</p>
+        </div>
+          <div class="topic-box">
+        <img src="Images/heart.png"/>
+        <p>LOVE</p>
+        </div>
+          <div class="topic-box computer-height">
+        <img src="Images/computer.png"/>
+        <p>WORK</p>
+        </div>
     </div>
     
 
